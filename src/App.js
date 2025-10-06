@@ -13,7 +13,7 @@ function App() {
         const res = await axios.get("https://xcountries-backend.labs.crio.do/all")
         setCountries(res.data)
       }catch(e){
-        console.log("fetching data error:", e)
+        console.error("Error fetching data: ", e)
 
       }
     };
